@@ -6,10 +6,11 @@
 
     <display-name>Библиотека книг</display-name>
 
-    <!-- Creates the Spring Container shared by all Servlets and Filters -->
+    <!-- Creates the Spring Container shared by all Servlets and Filters
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+    -->
 
     <servlet>
         <servlet-name>dispatcher</servlet-name>

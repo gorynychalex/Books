@@ -35,7 +35,6 @@
         <property name="hibernateProperties">
             <props>
                 <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
-                <!-- в оригинале hibernate.show_sql -->
                 <prop key="hibernate.show_sql">true</prop>
             </props>
         </property>

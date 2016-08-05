@@ -59,11 +59,24 @@ public class BookDAOImpl implements BookDAO {
         Session session = sessionFactory.getCurrentSession();
 
         //ЗАМЕНИТЬ!!!!
-//        List<Book> bookList = new ArrayList<Book>();
-//        List<Book> bookList = session.createQuery("from Books").list();
-        List<Book> bookList; 
-        Query query = session.createQuery("FROM Books");
-        bookList = query.list();
+        List<Book> bookList;
+//        bookList = new ArrayList<Book>();
+//        Book book1 = new Book();
+//        book1.setId(0);
+//        book1.setBookAuthor("Pushkin");
+//        book1.setBookTitle("Onegin");
+//        book1.setPrice(10);
+//        bookList.add(book1);
+//
+//        Book book2 = new Book();
+//        book2.setId(1);
+//        book2.setBookAuthor("Lermontov");
+//        book2.setBookTitle("Mtsiry");
+//        book2.setPrice(11);
+//        bookList.add(book2);
+        bookList = session.createQuery("from Book").list();
+//        Query query = session.createQuery("FROM Books");
+//        bookList = query.list();
 
         for(Book book: bookList){
             logger.info("Book list: " + book);
